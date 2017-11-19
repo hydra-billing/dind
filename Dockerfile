@@ -1,5 +1,5 @@
-FROM ubuntu:14.04
-MAINTAINER jerome.petazzoni@docker.com
+FROM ubuntu:16.04
+MAINTAINER a.gorodishenin@latera.ru
 
 # Let's start with some basic stuff.
 RUN apt-get update -qq && apt-get install -qqy \
