@@ -1,9 +1,10 @@
-FROM ubuntu:16.04
+FROM debian:jessie
 MAINTAINER a.gorodishenin@latera.ru
 
 # Let's start with some basic stuff.
 RUN apt-get update -qq && apt-get install -qqy \
     apt-transport-https \
+    apt-utils \
     ca-certificates \
     curl \
     lxc \
