@@ -1,5 +1,4 @@
-FROM debian:jessie
-MAINTAINER a.gorodishenin@latera.ru
+FROM debian:stretch
 
 # Let's start with some basic stuff.
 RUN apt-get update -qq && apt-get install -qqy \
@@ -9,7 +8,7 @@ RUN apt-get update -qq && apt-get install -qqy \
     curl \
     lxc \
     iptables
-    
+
 # Install Docker from Docker Inc. repositories.
 RUN curl -sSL https://get.docker.com/ | sh
 
